@@ -1,0 +1,21 @@
+# OS / editor
+.DS_Store
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+.env
+instance/
+
+# Flask session/cache
+flask_session/
+
+# Bytecode / coverage
+*.egg-info/
+.coverage
+htmlcov/
