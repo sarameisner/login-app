@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<body>
+    <!-- this is my protected page > it's only visbile if the user is logged in-->
+    <!-- flask passes the variable first_name from session -->
+    <h1>Hii {{ first_name }} 👋</h1>
+    <!-- logout form: sends a POST request to /logout -->
+    <!-- this clear the session in app -->
+    <form action="/logout" method="POST">
+        <button type="submit">Logout</button>
+    </form>
+</body>
+
+</html>

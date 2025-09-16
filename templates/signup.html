@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+</head>
+
+<body>
+
+    <h1>
+        Signup
+    </h1>
+
+    <form action="/signup" method="POST">
+        <!-- again name must match what app and x.py expects -->
+        <input name="user_name" type="text" placeholder="user name" required>
+        <input name="user_first_name" type="text" placeholder="first name" required>
+        <input name="user_last_name" type="text" placeholder="last name" required>
+        <input name="user_email" type="email" placeholder="email" required>
+        <input name="user_password" type="password" placeholder="password (min. 12 xx)" required>
+
+        <button type="submit">
+            Signup
+        </button>
+    </form>
+    <p>
+        Already have a user? <a href="/login">Log in</a>
+    </p>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<body>
+    <h1>Login</h1>
+    <!-- sends POST request to /login route -->
+    <form action="/login" method="POST" novalidate>
+        <!-- name must match what app expects -->
+        <input name="user_email" type="email" placeholder="Email" required>
+        <input name="user_password" type="password" placeholder="Password (12–50 chars)" required>
+        <button type="submit">Log in</button>
+    </form>
+    <!-- sign up link hehe -->
+    <p>
+        Don't you have a user? <a href="/signup">Sign up</a>
+    </p>
+</body>
+
+</html>
